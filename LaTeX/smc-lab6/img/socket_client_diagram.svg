@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="106.22858mm"
+   height="53.930515mm"
+   viewBox="0 0 106.22858 53.930516"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   sodipodi:docname="socket_client_diagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1310"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#065d06;fill-opacity:1;fill-rule:evenodd;stroke:#065d06;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1308"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path863"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#065d06;fill-opacity:1;fill-rule:evenodd;stroke:#065d06;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path857"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#065d06;fill-opacity:1;fill-rule:evenodd;stroke:#065d06;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="244.28571"
+     inkscape:cy="18.571429"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-53.817355,-23.585959)">
+    <g
+       id="g903"
+       style="fill:#baffba;fill-opacity:1;stroke-width:0.903972"
+       transform="matrix(1.2237413,0,0,1,-14.247324,-47.417118)">
+      <rect
+         style="fill:#baffba;fill-opacity:1;stroke:#276327;stroke-width:0.478352;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect835"
+         width="86.328056"
+         height="19.243404"
+         x="55.859329"
+         y="105.45101"
+         rx="0.16380264"
+         ry="0.17181604" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:11.3047px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#baffba;fill-opacity:1;stroke:none;stroke-width:0.239176"
+         x="61.26894"
+         y="118.07726"
+         id="text22"><tspan
+           sodipodi:role="line"
+           id="tspan20"
+           x="61.26894"
+           y="118.07726"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.84245px;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';fill:#baffba;fill-opacity:1;stroke-width:0.239176">recv()/send()</tspan></text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path852"
+       d="M 106.93165,43.060167 V 56.348778"
+       style="fill:none;stroke:#065d06;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="74.163437"
+       y="36.35099"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         x="74.163437"
+         y="36.35099"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';fill:#ffffff;stroke-width:0.264583">socket()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#004204;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="107.79774"
+       y="69.983101"
+       id="text18394"><tspan
+         sodipodi:role="line"
+         id="tspan18392"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';text-align:center;text-anchor:middle;fill:#004204;fill-opacity:1;stroke-width:0.264583"
+         x="107.79774"
+         y="69.983101">recvfrom()/sendto()</tspan></text>
+    <rect
+       style="fill:#baffba;fill-opacity:1;stroke:#276327;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect10"
+       width="105.64321"
+       height="19.243404"
+       x="54.110043"
+       y="23.850542"
+       rx="0.20045206"
+       ry="0.17181604" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#004204;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="107.70886"
+       y="35.528969"
+       id="text25362"><tspan
+         sodipodi:role="line"
+         id="tspan25360"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';text-align:center;text-anchor:middle;fill:#004204;fill-opacity:1;stroke-width:0.264583"
+         x="107.70886"
+         y="35.528969">socket()</tspan></text>
+  </g>
+</svg>

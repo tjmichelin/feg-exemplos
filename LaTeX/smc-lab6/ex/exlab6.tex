@@ -1,0 +1,135 @@
+\documentclass[12pt]{article}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[a4paper, top=2cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DOCUMENT VARIABLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\doctitle{Comunicação UDP/IP}
+\def\labnumber{6}
+\def\fulltitle{Laboratório \labnumber -- \doctitle}
+\def\docauthor{Thiago José Michelin}
+\def\docsubj{Sistemas Microcomputadorizados}
+\def\docsubjmn{SMC}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONFIGURATION FOR GRAPHICX PACKAGE %%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{../img}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COLOR CONFIGURATION FOR THE TEXT %%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{org}{RGB}{255, 102, 0}     % Orange
+\definecolor{gre}{RGB}{0, 128, 0}       % Green
+\definecolor{rdy}{RGB}{204, 0, 0}       % Red
+\definecolor{blu}{rgb}{0, 0.33, 0.83}   % Blue
+\definecolor{pur}{RGB}{153, 0, 153}     % Purple
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONFIGURATION FOR HYPERREF PACKAGE %%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+  colorlinks=true,
+  breaklinks=true,
+  linkcolor=red,
+  citecolor=red,
+  urlcolor=blu,
+  pdftitle={\fulltitle},
+  pdfauthor={\docauthor}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\ebt}[2]{\textcolor{#1}{\texttt{#2}}}
+\newcommand{\ebf}[2]{\textcolor{#1}{\textbf{#2}}}
+\newcommand{\ec}[2]{\textcolor{#1}{#2}}
+
+\title{Laboratório \labnumber \\ \doctitle \\ \vspace{0.6cm} Exercícios}
+\author{\docsubj \\
+  {\small Universidade Estadual Paulista ``Júlio de Mesquita Filho''} \\
+  {\small Faculdade de Engenharia e Ciências de Guaratinguetá} \\
+  {\small Departamento de Engenharia Elétrica}}
+\date{}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Para os exercícios a seguir:
+
+\begin{itemize}
+  \item Elabore fluxogramas que representem os algoritmos que serão implementados;
+  \item \textbf{Consulte a documentação} das bibliotecas utilizadas especificamente
+    para implementar a comunicação UDP/IP;
+  \item Ao final, execute os programas desenvolvidos e avalie se o funcionamento do
+    sistema está de acordo com o que foi solicitado no enunciado do exercício.
+\end{itemize}
+
+\vspace{12pt}
+
+\begin{itemize}
+  \item[1)] Elabore um programa cliente, que utilize o protocolo \texttt{UDP},
+    e seja capaz de se comunicar com um servidor \texttt{UDP} remoto com
+    endereço \texttt{68.183.28.251}. Este servidor executa uma instância do
+    processo conhecido como \textit{echoserver}, na porta 6666. O aplicativo
+    cliente deve ser capaz de:
+    
+    \begin{itemize}
+      \item[1.] Enviar mensagens (com qualquer conteúdo) a cada 400 ms para o servidor
+        pelo período de 20 s.
+      \item[3.] Medir o intervalo de tempo ($ \Delta_t $) entre o momento em que
+        o cliente faz a requisição ($ t_{req} $) e o momento em que recebe uma
+        resposta ($ t_{res} $) do servidor ($ \Delta_t = t_{res} - t_{req} $).
+      \item[4.] Salvar, em um arquivo texto simples (\texttt{.dat}), os valores de
+        $ \Delta_t $ e $ t $ obtidos no item anterior.
+    \end{itemize}
+
+  \item[2)] De forma análoga ao exercício anterior, elabore um programa cliente,
+    desta vez, que utilize o protocolo \texttt{TCP}, e seja capaz de se comunicar
+    com um servidor \texttt{TCP} remoto com endereço \texttt{68.183.28.251}. Este
+    servidor executa uma segunda instância do processo \textit{echoserver}, desta
+    vez utilizando, também, o protocolo \texttt{TCP}, na porta 6667. O aplicativo
+    cliente deve ser capaz de:
+
+    \begin{itemize}
+      \item[1.] Enviar mensagens (com qualquer conteúdo) a cada 400 ms para o servidor
+        pelo período de 20 s.
+      \item[3.] Medir o intervalo de tempo ($ \Delta_t $) entre o momento em que
+        o cliente faz a requisição ($ t_{req} $) e o momento em que recebe uma
+        resposta ($ t_{res} $) do servidor ($ \Delta_t = t_{res} - t_{req} $).
+      \item[4.] Salvar, em um arquivo texto simples (\texttt{.dat}), os valores de
+        $ \Delta_t $ e $ t $ obtidos no item anterior.
+    \end{itemize}
+
+  \item[3)] De posse dos dados gerados pelos clientes dos dois aplicativos desenvolvidos
+    nos exercícios anteriores:
+
+    \begin{itemize}
+      \item[1.] Elabore um gráfico de $ \Delta_t $ em função de $ t $ para a
+        comunicação entre cliente e servidor para cada um dos casos, ou seja, uma
+        curva para os resultados obtidos utilizando o protocolo TCP e outra para
+        os resultados obtidos utilizando o protocolo UDP.
+      \begin{itemize}
+        \item[a.] Coloque as diferentes curvas no mesmo gráfico para que seja possível
+          visualizar melhor as diferenças temporais entre as diferentes situações.
+      \end{itemize}
+      \item[2.] Calcule a média, variância, desvio padrão e os valores máximo e mínimo
+        de $ \Delta_{t_{TCP}} $ e $ \Delta_{t_{UDP}} $ (dados temporais da comunicação
+        TCP e UDP, respectivamente).
+      \item[3.] Comente sobre as diferenças encontradas e suas possíveis causas.
+    \end{itemize}
+\end{itemize}
+
+\section*{Relatório}
+
+Os exercícios deste laboratório podem ser realizados em grupos de até \ebf{rdy}{dois}
+alunos. Cada grupo deve elaborar um relatório detalhando cada atividade realizada,
+incluindo comentários sobre as escolhas adotadas para a solução de cada exercício,
+fluxogramas, esquemáticos e códigos de programação elaborados. Este relatório deve
+ser entregue no formato de arquivo \ebt{rdy}{PDF}. Os arquivos de código-fonte também
+devem ser entregues, de forma que seja possível reproduzir os resultados obtidos em
+outros dispositivos.
+
+\end{document}
